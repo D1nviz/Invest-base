@@ -151,7 +151,7 @@ export const FeaturedInfoContainer = styled.div`
    display: flex;
    justify-content: center;
    border-radius: 50px 50px 50px 50px;
-   `;
+`;
 export const FeaturedDescription = styled.div`
    padding: 15px;
    max-width: 480px;
@@ -167,15 +167,12 @@ export const FeaturedText = styled.p`
    margin-top: 5px;
 `;
 export const FeaturedItemsContainer = styled.div`
-   grid-row-gap: 16px;
-   grid-template-rows: auto;
-   grid-template-columns: .8fr 1fr 1fr 1fr 1fr;
-   grid-auto-columns: 1fr;
+
+   margin: 40px auto;
+   display: flex;
+   justify-content: space-between;
    align-items: center;
-   margin-left: auto;
-   margin-right: auto;
-   padding-top: 40px;
-   display: grid;
+   flex-wrap: wrap;
 `;
 export const FeaturedItem = styled.div`
    font-size: 16px;
@@ -220,5 +217,35 @@ export const FooterLogo = styled.div`
    width: 125px;
 `;
 export const FooterDescription = styled.p`
-max-width: 500px;
+   max-width: 500px;
 `;
+export const CardsSection = styled.section`
+margin: 20px 0;
+`;
+export const CardContainer = styled.div`
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+`;
+export const Card = styled.div`
+   width: 250px;
+   text-align: center;
+`;
+export const CardImgContainer = styled.div``;
+export const CardTitle = styled.h4`
+   font-size: 20px;
+   font-weight: 600;
+`;
+export const CardDescription = styled.p`
+   font-size: 16px;
+   line-height: 140%;
+`;
+
+export const AdvantagesSection = styled.section``;
+export const AdvantagesTitle = styled.h2`
+   font-size: 54px;
+`;
+export const SlideContainer = styled.div``;
+export const SlideTitle = styled.h3``;
+

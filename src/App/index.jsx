@@ -1,6 +1,5 @@
 import AppHeader from "../AppHeader";
-import AppBanner from "../AppBanner";
-import AppFeatured from "../AppFeatured";
+import MainPage from "../pages/MainPage";
 import { Wrapper } from "../styles";
 import AppFooter from "../AppFooter";
 const App = () => {
@@ -8,10 +7,9 @@ const App = () => {
     <>
       <AppHeader />
       <Wrapper>
-        <AppBanner/>
-        <AppFeatured/>
+        <MainPage/>
       </Wrapper>
-      <AppFooter></AppFooter>
+      <AppFooter />
 
     </>
   );

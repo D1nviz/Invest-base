@@ -42,7 +42,6 @@ const AppFooter = () => {
                </FooterColumn>
             </FooterContainer>
          </FooterLinesContainer>
-
       </Footer>
    )
 }
