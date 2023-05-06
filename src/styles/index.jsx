@@ -9,7 +9,7 @@ export const Header = styled.div`
    display: flex;
    justify-content: space-between;
    background-color: rgba(255,255,255, .8);
-   z-index: 1;
+   z-index: 100;
 `;
 export const Logo = styled.div`
    display: flex;
@@ -142,17 +142,19 @@ export const BannerVideo = styled.iframe`
    padding: 0;
 `;
 export const FeaturedSection = styled.section`
-margin-top: 80px;`;
+margin-top: 80px;
+margin-bottom: 80px;`;
 export const FeaturedInfoContainer = styled.div`
    margin: 0 auto;
-   width: 660px;
+   max-width: 660px;
    background-color:#eff7ef;
    display: flex;
    justify-content: center;
    border-radius: 50px 50px 50px 50px;
    `;
 export const FeaturedDescription = styled.div`
-   width: 480px;
+   padding: 15px;
+   max-width: 480px;
    `;
 export const FeaturedTitle = styled.p`
    margin-bottom: 0;
@@ -185,4 +187,38 @@ export const FeaturedItem = styled.div`
    img {
       cursor: pointer;
    }
+`;
+export const Footer = styled.footer`
+   color: #878eb0;
+   margin: 0 auto;
+   text-align: left;
+`;
+export const FooterLinesContainer = styled.div`
+   width: 100%;
+   border-top:1px solid #878eb0; 
+   border-bottom:1px solid #878eb0;
+`;
+export const FooterContainer = styled.div`
+   display: flex;
+   justify-content: space-between;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   max-width: 1200px;
+`;
+export const FooterColumn = styled.div``;
+export const FooterItem = styled.p`
+   font-size: 14px;
+   padding: 0 10px;
+   cursor: pointer;
+   &:hover {
+      color: #3554f2;
+   }
+   
+`;
+export const FooterInfoContainer = styled.div``;
+export const FooterLogo = styled.div`
+   width: 125px;
+`;
+export const FooterDescription = styled.p`
+max-width: 500px;
 `;

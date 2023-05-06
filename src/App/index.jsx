@@ -2,6 +2,7 @@ import AppHeader from "../AppHeader";
 import AppBanner from "../AppBanner";
 import AppFeatured from "../AppFeatured";
 import { Wrapper } from "../styles";
+import AppFooter from "../AppFooter";
 const App = () => {
   return (
     <>
@@ -10,6 +11,7 @@ const App = () => {
         <AppBanner/>
         <AppFeatured/>
       </Wrapper>
+      <AppFooter></AppFooter>
 
     </>
   );
