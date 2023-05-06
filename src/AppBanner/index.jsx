@@ -6,7 +6,7 @@ import {
    BannerButton,
    BannerTitle,
    BannerVideo,
-   BannerVideoContainer
+   BannerVideoContainer,
 } from "../styles"
 const AppBanner = () => {
    return (
