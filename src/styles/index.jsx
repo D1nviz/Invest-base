@@ -242,10 +242,93 @@ export const CardDescription = styled.p`
    line-height: 140%;
 `;
 
-export const AdvantagesSection = styled.section``;
+export const AdvantagesSection = styled.section`
+margin-bottom: 50px;`;
 export const AdvantagesTitle = styled.h2`
-   font-size: 54px;
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 72px;
+   line-height: 105%;
 `;
-export const SlideContainer = styled.div``;
-export const SlideTitle = styled.h3``;
+export const SlideContainer = styled.div`
+   display: flex;
+   justify-content: space-around;
+   background-image: radial-gradient(circle at 100% 0,#11dead 7%,transparent),linear-gradient(#3554f2,#3554f2);
+   border-radius: 90px;
+   width: 100%;
+    min-height: 640px;
+    min-width: 50%;
+`;
+export const SlideInfoContainer = styled.div`
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 540px;
+   align-self: center;
+   margin-left: 140px;
+   padding-top: 24px;
+   padding-bottom: 24px;
+   padding-right: 20px;
+`;
+
+export const ProductHeader = styled.h5`
+   color: #95d6f6;
+   font-size: 18px;
+   font-weight: 600;
+   line-height: 110%;
+`;
+export const SlideTitle = styled.h3`
+   color: #fff;
+   margin-top: 24px;
+   padding-right: 0;
+   font-size: 52px;
+   line-height: 110%;
+   margin-top: 0;
+   margin-bottom: 0;
+`;
+export const SlideButton = styled(BannerButton)`
+   box-shadow: none;
+   width: 255px;
+   padding: 14px;
+   font-size: 18px;
+   border-radius: 24px;
+   margin: 25px 0;
+    &:hover {
+      
+    }
+`;
+export const SlideImgContainer = styled.div`
+   width: 500px;
+   height: auto;
+   min-height: auto;
+   min-width: auto;
+   justify-content: flex-end;
+   align-self: flex-end;
+   margin-right: 0;
+   display: flex;
+`;
+export const SlideDescriptionContainer = styled.div`
+   display: flex;
+   flex-direction: column;
+`;
+export const SlideDescription = styled.div`
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   color: #fff;
+   align-self: auto;
+   margin-top: 15px;
+   padding-left: 24px;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 125%;
+   span {
+      font-weight: 600;
+      padding-left: 20px;
+   }
+   img {
+      width: 30px;
+      height: 26px;
+   }
+`;
 
