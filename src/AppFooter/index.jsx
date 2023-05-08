@@ -9,7 +9,6 @@ import {
    FooterLinesContainer
 } from "../styles";
 import logo from "../resources/logo.svg";
-import instagram from "../resources/instagram.svg"
 
 const AppFooter = () => {
    return (

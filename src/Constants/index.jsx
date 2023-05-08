@@ -2,8 +2,10 @@ import firstCard from "../resources/card-1.webp";
 import secondCard from "../resources/card-2.webp";
 import thirdCard from "../resources/card-3.webp";
 import fourthCard from "../resources/card-4.webp";
-
-
+import advantage1 from "../resources/advantage-1.png";
+import advantage2 from "../resources/advantage-2.png";
+import advantage3 from "../resources/advantage-3.png";
+import advantageIcon from "../resources/advantageIcon1.webp"
 export const cards = [
    {  
       id: 1,
@@ -28,5 +30,66 @@ export const cards = [
       title: "Keep your account safe and secure",
       description: "Path uses multi-layer security technology to protect your data",
       thumbnail: fourthCard
+   }
+]
+export const slides = [
+   {  
+      headDesc: "Let us build your portfolio",
+      title: "Automate your investing with Path Managed Portfolios.",
+      image: advantage1,
+      description: [
+         {
+            ico: advantageIcon,
+            text: "Take a risk assessment"
+         },
+         {
+            ico: advantageIcon,
+            text: "Get your personalized portfolio"
+         },
+         {
+            ico: advantageIcon,
+            text: "Sit back and let us do the work"
+         }
+      ]
+   },
+   {
+
+      headDesc: "Build your own portfolio",
+      title: "Know your crypto? Build your own portfolio.",
+      image: advantage2,
+      imgPos: "left",
+      description: [
+         {
+            ico: advantageIcon,
+            text: "Buy and sell digital assets"
+         },
+         {
+            ico: advantageIcon,
+            text: "Convert one crypto to many, or many to one"
+         },
+         {
+            ico: advantageIcon,
+            text: "Discover and compare cryptocurrencies"
+         }
+      ]
+   },
+   {
+      headDesc: "Crypto on-the-go",
+      title: "Your crypto portfolio in your pocket.",
+      image: advantage3,
+      description: [
+         {
+            ico: advantageIcon,
+            text: "Manage all your crypto in one convenient app"
+         },
+         {
+            ico: advantageIcon,
+            text: "Track your portfolio anywhere, anytime"
+         },
+         {
+            ico: advantageIcon,
+            text: "Invest with just a few clicks"
+         }
+      ]
    }
 ]

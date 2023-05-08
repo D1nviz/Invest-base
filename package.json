@@ -9,7 +9,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.10"
+    "styled-components": "^5.3.10",
+    "uuid": "^9.0.0"
   },
   "scripts": {
     "predeploy": "npm run build",

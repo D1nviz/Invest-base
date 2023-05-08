@@ -1,35 +1,56 @@
-import { 
+import { v4 as uuidv4 } from 'uuid';
+import {
    AdvantagesSection,
    AdvantagesTitle,
-   ProductHeader,
+   SlideHeadDesc,
    SlideButton,
    SlideContainer,
    SlideDescription,
    SlideDescriptionContainer,
    SlideImgContainer,
-   SlideInfoContainer, 
+   SlideInfoContainer,
    SlideTitle,
-   } from "../styles";
-   import firstSlide from "../resources/advantage-1.png";
-   import advantageIcon from "../resources/advantageIcon1.webp"
+} from "../styles";
+import { slides } from "../Constants";
 
+const renderSlides = slides.map(({ headDesc, title, image, imgPos, description }) => {
+   const renderDesctiption = description.map(({ ico, text }) => (
+      <SlideDescription key={uuidv4()}><img src={ico} alt="description ico" /><span>{text}</span></SlideDescription>
+   ));
+   return (
+      <SlideContainer key={uuidv4()}>
+         {imgPos === "left" ?
+            <>
+               <SlideImgContainer><img src={image} alt={title} /></SlideImgContainer>
+               <SlideInfoContainer>
+                  <SlideHeadDesc>{headDesc}</SlideHeadDesc>
+                  <SlideTitle>{title}</SlideTitle>
+                  <SlideButton>Coming soon</SlideButton>
+                  <SlideDescriptionContainer>
+                     {renderDesctiption}
+                  </SlideDescriptionContainer>
+               </SlideInfoContainer>
+            </> :
+            <>
+               <SlideInfoContainer>
+                  <SlideHeadDesc>{headDesc}</SlideHeadDesc>
+                  <SlideTitle>{title}</SlideTitle>
+                  <SlideButton>Coming soon</SlideButton>
+                  <SlideDescriptionContainer>
+                     {renderDesctiption}
+                  </SlideDescriptionContainer>
+               </SlideInfoContainer>
+               <SlideImgContainer><img draggable={false} src={image} alt={title} /></SlideImgContainer>
+            </>
+         }
+      </SlideContainer>
+   )
+})
 const AppAdvantages = () => {
    return (
       <AdvantagesSection>
          <AdvantagesTitle>Ditch your crypto exchange.</AdvantagesTitle>
-         <SlideContainer>
-            <SlideInfoContainer>
-               <ProductHeader>Let us build your portfolio</ProductHeader>
-               <SlideTitle>Automate your investing with Path Managed Portfolios.</SlideTitle>
-               <SlideButton>Coming soon</SlideButton>
-               <SlideDescriptionContainer>
-                  <SlideDescription><img src={advantageIcon} alt="" /><span>Take a risk assessment</span></SlideDescription>
-                  <SlideDescription><img src={advantageIcon} alt="" /><span>Get your personalized portfolio</span></SlideDescription>
-                  <SlideDescription><img src={advantageIcon} alt="" /><span>Sit back and let us do the work</span></SlideDescription>
-               </SlideDescriptionContainer>
-            </SlideInfoContainer>
-            <SlideImgContainer><img src={firstSlide} alt="" /></SlideImgContainer>
-         </SlideContainer>
+         {renderSlides}
       </AdvantagesSection>
    )
 };
