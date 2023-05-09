@@ -3,11 +3,12 @@
 
   list-style-type: none;
   font-family: 'Gilroy', sans-serif;
+  box-sizing: border-box;
   
 }
 img {
-  display: block;
   width: 100%;
+  display: block;
 }
 body {
   color: #2f3158;

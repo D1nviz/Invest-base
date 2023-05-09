@@ -7,7 +7,7 @@ import advantage2 from "../resources/advantage-2.png";
 import advantage3 from "../resources/advantage-3.png";
 import advantageIcon from "../resources/advantageIcon1.webp"
 export const cards = [
-   {  
+   {
       id: 1,
       title: "Intelligent crypto management",
       description: "Our automation tools aim to keep your portfolio balanced and risk-adjusted by ensuring your assets are appropriately allocated over time.",
@@ -33,10 +33,15 @@ export const cards = [
    }
 ]
 export const slides = [
-   {  
+
+   {
+      id: 1,
       headDesc: "Let us build your portfolio",
       title: "Automate your investing with Path Managed Portfolios.",
       image: advantage1,
+      bgImg: "radial-gradient(circle at 100% 0,#11dead 7%,transparent),linear-gradient(#3554f2,#3554f2)",
+      headColor: "#95d6f6",
+      fntColor: "white",
       description: [
          {
             ico: advantageIcon,
@@ -53,11 +58,10 @@ export const slides = [
       ]
    },
    {
-
+      id: 2,
       headDesc: "Build your own portfolio",
       title: "Know your crypto? Build your own portfolio.",
       image: advantage2,
-      imgPos: "left",
       description: [
          {
             ico: advantageIcon,
@@ -74,6 +78,7 @@ export const slides = [
       ]
    },
    {
+      id: 3,
       headDesc: "Crypto on-the-go",
       title: "Your crypto portfolio in your pocket.",
       image: advantage3,
