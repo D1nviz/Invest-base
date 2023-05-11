@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Invest-base/static/css/main.86bcb714.css",
-    "main.js": "/Invest-base/static/js/main.247a9b3b.js",
+    "main.js": "/Invest-base/static/js/main.e8da51b8.js",
     "static/media/advantage-2.png": "/Invest-base/static/media/advantage-2.01d212a3a0353cda9576.png",
     "static/media/advantage-1.png": "/Invest-base/static/media/advantage-1.fdcee76d280fd40de95a.png",
     "static/media/advantage-3.png": "/Invest-base/static/media/advantage-3.bd5064279956dc865bde.png",
@@ -13,10 +13,10 @@
     "static/media/advantageIcon1.webp": "/Invest-base/static/media/advantageIcon1.7756a17fadaa56ef2284.webp",
     "index.html": "/Invest-base/index.html",
     "main.86bcb714.css.map": "/Invest-base/static/css/main.86bcb714.css.map",
-    "main.247a9b3b.js.map": "/Invest-base/static/js/main.247a9b3b.js.map"
+    "main.e8da51b8.js.map": "/Invest-base/static/js/main.e8da51b8.js.map"
   },
   "entrypoints": [
     "static/css/main.86bcb714.css",
-    "static/js/main.247a9b3b.js"
+    "static/js/main.e8da51b8.js"
   ]
 }
