@@ -1,4 +1,4 @@
-import useOnScreen from "../../hooks/useOnScreen"; 
+import useOnScreen from "../../hooks/useOnScreen";
 import {
     FeaturedDescription,
     FeaturedTitle,
@@ -8,8 +8,8 @@ import {
     FeaturedSection,
     FeaturedInfoContainer
 } from "./styles";
-import {featuredItems} from "../Constants";
-import {useRef} from "react";
+import { featuredItems } from "../Constants";
+import { useRef } from "react";
 import useCardsAnimation from "../../hooks/useCardsAnimations";
 
 const AppFeatured = () => {
@@ -26,15 +26,13 @@ const AppFeatured = () => {
                         keep our clients’ best interests at heart.</FeaturedText>
                 </FeaturedDescription>
             </FeaturedInfoContainer>
-            <FeaturedItemsContainer >
-                <div ref={featureRef} >
-                    <FeaturedItem >Featured in</FeaturedItem>
-                    {featuredItems.map((item, i) => (
-                        <FeaturedItem   key={i}>
-                            <img src={item} alt={`featured item ${i + 1}`}/>
-                        </FeaturedItem>
-                    ))}
-                </div>
+            <FeaturedItemsContainer ref={featureRef}>
+                <FeaturedItem >Featured in</FeaturedItem>
+                {featuredItems.map((item, i) => (
+                    <FeaturedItem key={i}>
+                        <img src={item} alt={`featured item ${i + 1}`} />
+                    </FeaturedItem>
+                ))}
             </FeaturedItemsContainer>
         </FeaturedSection>
     )
