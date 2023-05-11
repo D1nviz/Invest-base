@@ -27,12 +27,13 @@ export const FeaturedText = styled.p`
    margin-top: 5px;
 `;
 export const FeaturedItemsContainer = styled.div`
-
-   margin: 40px auto;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-wrap: wrap;
+   div {
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+   }
 `;
 export const FeaturedItem = styled.div`
    font-size: 16px;

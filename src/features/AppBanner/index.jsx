@@ -7,7 +7,7 @@ import {
   BannerVideo,
   BannerVideoContainer,
 } from "./styles";
-import { Button } from "../styles";
+import { Button } from "../../styles";
 
 const AppBanner = () => {
   return (

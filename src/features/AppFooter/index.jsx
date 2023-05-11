@@ -9,7 +9,7 @@ import {
   FooterLinesContainer
 } from "./styles";
 
-import logo from "../resources/logo.svg";
+import logo from "../../resources/logo.svg";
 
 const AppFooter = () => {
   return (

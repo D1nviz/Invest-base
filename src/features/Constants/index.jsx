@@ -1,17 +1,17 @@
-import firstCard from "../resources/card-1.webp";
-import secondCard from "../resources/card-2.webp";
-import thirdCard from "../resources/card-3.webp";
-import fourthCard from "../resources/card-4.webp";
+import firstCard from "../../resources/card-1.webp";
+import secondCard from "../../resources/card-2.webp";
+import thirdCard from "../../resources/card-3.webp";
+import fourthCard from "../../resources/card-4.webp";
 
-import advantage1 from "../resources/advantage-1.png";
-import advantage2 from "../resources/advantage-2.png";
-import advantage3 from "../resources/advantage-3.png";
-import advantageIcon from "../resources/advantageIcon1.webp"
+import advantage1 from "../../resources/advantage-1.png";
+import advantage2 from "../../resources/advantage-2.png";
+import advantage3 from "../../resources/advantage-3.png";
+import advantageIcon from "../../resources/advantageIcon1.webp"
 
-import cnbc from "../resources/cnbc.png";
-import coindesk from "../resources/coindesk.png";
-import cointel from "../resources/cointelegraph.png";
-import yahoo from "../resources/yahoo.png"
+import cnbc from "../../resources/cnbc.png";
+import coindesk from "../../resources/coindesk.png";
+import cointel from "../../resources/cointelegraph.png";
+import yahoo from "../../resources/yahoo.png"
 
 export const featuredItems = [
     cnbc,

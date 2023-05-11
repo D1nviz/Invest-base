@@ -4,8 +4,8 @@ import {
   NavList,
   NavItem
 } from "./styles";
-import { Logo } from "../styles"
-import logo from "../resources/logo.svg"
+import { Logo } from "../../styles"
+import logo from "../../resources/logo.svg"
 const AppHeader = () => {
   return (
     <Header>

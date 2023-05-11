@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CardsSection = styled.section`
-   margin: 20px 0;
 `;
 export const CardContainer = styled.div`
    width: 100%;

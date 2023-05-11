@@ -1,7 +1,7 @@
-import AppBanner from "../AppBanner";
-import AppFeatured from "../AppFeatured";
-import AppCards from "../AppCards";
-import AppAdvantages from "../AppAdvantages";
+import AppBanner from "../features/AppBanner";
+import AppFeatured from "../features/AppFeatured";
+import AppCards from "../features/AppCards";
+import AppAdvantages from "../features/AppAdvantages";
 import { Wrapper } from "../styles";
 const MainPage = () => {
    return (
