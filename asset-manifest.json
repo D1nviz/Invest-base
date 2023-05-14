@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Invest-base/static/css/main.9c9dc5a5.css",
-    "main.js": "/Invest-base/static/js/main.beb01d9b.js",
+    "main.css": "/Invest-base/static/css/main.9324c03e.css",
+    "main.js": "/Invest-base/static/js/main.3ded616c.js",
     "static/media/advantage-2.png": "/Invest-base/static/media/advantage-2.01d212a3a0353cda9576.png",
     "static/media/advantage-1.png": "/Invest-base/static/media/advantage-1.fdcee76d280fd40de95a.png",
     "static/media/advantage-3.png": "/Invest-base/static/media/advantage-3.bd5064279956dc865bde.png",
@@ -12,11 +12,11 @@
     "static/media/logo.svg": "/Invest-base/static/media/logo.8cd849e7682a882430b5df9c6d2a5f53.svg",
     "static/media/advantageIcon1.webp": "/Invest-base/static/media/advantageIcon1.7756a17fadaa56ef2284.webp",
     "index.html": "/Invest-base/index.html",
-    "main.9c9dc5a5.css.map": "/Invest-base/static/css/main.9c9dc5a5.css.map",
-    "main.beb01d9b.js.map": "/Invest-base/static/js/main.beb01d9b.js.map"
+    "main.9324c03e.css.map": "/Invest-base/static/css/main.9324c03e.css.map",
+    "main.3ded616c.js.map": "/Invest-base/static/js/main.3ded616c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c9dc5a5.css",
-    "static/js/main.beb01d9b.js"
+    "static/css/main.9324c03e.css",
+    "static/js/main.3ded616c.js"
   ]
 }
