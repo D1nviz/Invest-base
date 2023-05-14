@@ -5,9 +5,6 @@
   box-sizing: border-box;
   
 }
-.slide {
-  transform: translate(0, 0) !important;
-}
 .slides-container .pin-spacer:last-child .slide {
   position: static !important;
 }

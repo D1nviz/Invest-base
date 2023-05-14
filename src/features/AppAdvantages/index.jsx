@@ -23,20 +23,38 @@ gsap.registerPlugin(ScrollTrigger);
 const AppAdvantages = () => {
   const slidesRef = useRef([]);
   const slidesContainerRef = useRef(null);
-
   useEffect(() => {
     let slides = gsap.utils.toArray(".slide");
     slides.forEach(slide => ScrollTrigger.create({ trigger: slide, start: "top top" }));
 
-    slides.forEach((slide) => {
-      ScrollTrigger.create({
-        trigger: slide,
-        start: "top top",
-        pin: true,
-        pinSpacing: false,
+    slides.forEach((slide, i) => {
+      gsap.fromTo(slide, {
+        opacity: 1,
+        transform: "scale(1)"
+      }, {
+        opacity: .2,
+        duration: 1,
+        ease: "power3.inOut",
+        startAt: {
+          opacity: 1,
+          width: "100%",
+          height: "100%",
+        },
+        scrollTrigger: {
+          trigger: slide,
+          start: "top top",
+          end: "+=100%",
+          scrub: true,
+          pin: true,
+          pinSpacing: false,
+          onUpdate: (self) => {
+            const progress = self.progress.toFixed(2); 
+            const scale = 1 - (progress * 0.2); 
+            slide.style.transform = `scale(${scale})`;
+          },
+        },
       });
     });
-
   }, []);
 
   const setImageOrder = (id, image) => {

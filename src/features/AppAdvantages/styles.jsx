@@ -24,7 +24,7 @@ export const SlideContainer = styled.section`
   display: flex;
   margin-top: 40px;
   overflow: hidden;
-  z-index: ${({zIndex}) => zIndex || 0};
+  z-index: ${({zIndex}) => zIndex || 0};;
 `;
 export const SlideInfoContainer = styled.div`
   align-self: center;
