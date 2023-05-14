@@ -1,14 +1,17 @@
 import { gsap } from "gsap";
 import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+gsap.registerPlugin(ScrollTrigger);
 
-const useCardsAnimation = (isOnScreen, ref) => {
+const useAnimation = (isOnScreen, ref) => {
   useEffect(() => {
     if (isOnScreen) {
       gsap.to(ref.current, {
         scrollTrigger: {
           trigger: ref.current,
-          toggleActions: "play"
+          once: true,
+          start: "top 90%", 
         },
         y: 0,
         opacity: 1,
@@ -18,9 +21,9 @@ const useCardsAnimation = (isOnScreen, ref) => {
       gsap.to(ref.current, {
         scrollTrigger: {
           trigger: ref.current,
-          toggleActions: "reverse"
+          once: true
         },
-        y: -50,
+        y: -20,
         opacity: 0,
         duration: 1
       });
@@ -28,4 +31,4 @@ const useCardsAnimation = (isOnScreen, ref) => {
   }, [isOnScreen])
 }
 
-export default useCardsAnimation;
+export default useAnimation;

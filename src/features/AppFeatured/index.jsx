@@ -1,4 +1,6 @@
+import { useRef } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
+import useAnimation from "../../hooks/useAnimations";
 import {
     FeaturedDescription,
     FeaturedTitle,
@@ -9,13 +11,11 @@ import {
     FeaturedInfoContainer
 } from "./styles";
 import { featuredItems } from "../Constants";
-import { useRef } from "react";
-import useCardsAnimation from "../../hooks/useCardsAnimations";
 
 const AppFeatured = () => {
     const featureRef = useRef();
     const isOnScreen = useOnScreen(featureRef, "-100px")
-    useCardsAnimation(isOnScreen, featureRef);
+    useAnimation(isOnScreen, featureRef);
 
     return (
         <FeaturedSection >

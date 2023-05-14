@@ -1,27 +1,30 @@
 import styled from "styled-components";
 import {Button} from "../../styles";
 
-export const AdvantagesSection = styled.section`
+export const AdvantagesSection = styled.div`
+  width: 100%;
+  justify-content: center;
   margin-bottom: 50px;`;
 export const AdvantagesTitle = styled.h2`
   text-align: center;
   font-size: 72px;
   line-height: 105%;
 `;
-export const SlideContainer = styled.div`
+export const SlidesContainer = styled.div`
+  width: 100%;
+`;
+export const SlideContainer = styled.section`
   background-color: #f5f6fa;
   background-image: ${({bgImg}) => bgImg};
   color: ${({fntColor}) => fntColor};
-  width: 100%;
   min-height: 640px;
   min-width: 50%;
   border-radius: 90px;
   justify-content: space-around;
-  margin-left: 0;
-  margin-right: 0;
   display: flex;
   margin-top: 40px;
   overflow: hidden;
+  z-index: ${({zIndex}) => zIndex || 0};
 `;
 export const SlideInfoContainer = styled.div`
   align-self: center;
