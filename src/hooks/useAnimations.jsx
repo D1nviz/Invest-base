@@ -6,27 +6,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 const useAnimation = (isOnScreen, ref) => {
   useEffect(() => {
-    if (isOnScreen) {
-      gsap.to(ref.current, {
+    gsap.fromTo(
+      ref.current,
+      {
         scrollTrigger: {
           trigger: ref.current,
-          start: "top 90%", 
+        },
+        y: -35,
+        opacity: .2,
+      },
+      {
+        scrollTrigger: {
+          trigger: ref.current,
         },
         y: 0,
         opacity: 1,
-        duration: 1
-      });
-    } else {
-      gsap.to(ref.current, {
-        scrollTrigger: {
-          trigger: ref.current,
-        },
-        y: -20,
-        opacity: 0,
-        duration: 1
-      });
-    }
-  }, [isOnScreen])
+        duration: 1.5
+      }
+    );
+  }, [isOnScreen]);
 }
 
 export default useAnimation;

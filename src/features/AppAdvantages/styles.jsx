@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {Button} from "../../styles";
+import { Button } from "../../styles";
 
 export const AdvantagesSection = styled.div`
   width: 100%;
@@ -15,8 +15,8 @@ export const SlidesContainer = styled.div`
 `;
 export const SlideContainer = styled.section`
   background-color: #f5f6fa;
-  background-image: ${({bgImg}) => bgImg};
-  color: ${({fntColor}) => fntColor};
+  background-image: ${({ bgImg }) => bgImg};
+  color: ${({ fntColor }) => fntColor};
   min-height: 640px;
   min-width: 50%;
   border-radius: 90px;
@@ -24,7 +24,8 @@ export const SlideContainer = styled.section`
   display: flex;
   margin-top: 40px;
   overflow: hidden;
-  z-index: ${({zIndex}) => zIndex || 0};;
+  z-index: ${({ zIndex }) => zIndex || 0};;
+  box-shadow: 0px 0px 40px 1px #9595958d;
 `;
 export const SlideInfoContainer = styled.div`
   align-self: center;
@@ -38,7 +39,7 @@ export const SlideHeadDesc = styled.h5`
   font-size: 18px;
   font-weight: 600;
   line-height: 110%;
-  color: ${({headColor}) => headColor};
+  color: ${({ headColor }) => headColor};
 `;
 export const SlideTitle = styled.h3`
   padding-right: 0;
@@ -56,7 +57,7 @@ export const SlideButton = styled(Button)`
   margin: 25px 0;
 `;
 export const SlideImgContainer = styled.div`
-  order: ${({position}) => position};
+  order: ${({ position }) => position};
   align-self: flex-end;
 
   &.img-right {

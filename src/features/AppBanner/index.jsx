@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { amimateDesctiption, animateTitle } from "../../helpers";
+import { amimateDesctiption, animateRef } from "../../helpers";
 import {
   BannerSection,
   BannerContainer,
@@ -12,13 +12,15 @@ import {
 import { Button } from "../../styles";
 
 const AppBanner = () => {
-
   const descriptionRef = useRef(null);
   const titleRef = useRef(null);
-    useEffect(() => {
-      amimateDesctiption(descriptionRef);
-      animateTitle(titleRef);
-  },[])
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    amimateDesctiption(descriptionRef);
+    animateRef(titleRef, 200);
+    animateRef(videoRef, 50);
+  }, []);
 
   return (
     <BannerSection>
@@ -29,7 +31,7 @@ const AppBanner = () => {
           <Button>Coming soon</Button>
         </BannerInfo>
         <BannerVideoContainer>
-          <BannerVideo src="https://player.vimeo.com/video/770601792?background=1&autoplay=1&loop=1&autopause=0"></BannerVideo>
+          <BannerVideo ref={videoRef} src="https://player.vimeo.com/video/770601792?background=1&autoplay=1&loop=1&autopause=0"></BannerVideo>
         </BannerVideoContainer>
       </BannerContainer>
     </BannerSection>

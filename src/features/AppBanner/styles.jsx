@@ -33,7 +33,8 @@ export const BannerVideoContainer = styled.div`
    height: 600px;
 `;
 export const BannerVideo = styled.iframe`
-   border: none;
+   border: 0;
+   outline: none;
    overflow: hidden;
    width: 100%;
    height: 100%;

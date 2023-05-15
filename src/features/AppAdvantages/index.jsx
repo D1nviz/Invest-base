@@ -1,7 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-
 import { useRef, useEffect } from 'react';
-
 import {
   AdvantagesSection,
   AdvantagesTitle,
@@ -19,11 +17,10 @@ import { slides } from "../Constants";
 import { animateSlides } from '../../helpers';
 
 
-
 const AppAdvantages = () => {
   const slidesRef = useRef([]);
   const slidesContainerRef = useRef(null);
-  
+
   useEffect(() => {
     animateSlides();
   }, []);
@@ -59,7 +56,7 @@ const AppAdvantages = () => {
             {renderDesctiption}
           </SlideDescriptionContainer>
         </SlideInfoContainer>
-      </SlideContainer>
+      </SlideContainer >
     )
   });
   return (

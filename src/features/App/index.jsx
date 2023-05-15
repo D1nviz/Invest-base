@@ -4,11 +4,11 @@ import AppFooter from "../AppFooter";
 
 const App = () => {
   return (
-    <>
-      <AppHeader />
-      <MainPage />
-      <AppFooter />
-    </>
+      <>
+        <AppHeader />
+        <MainPage />
+        <AppFooter />
+      </>
   );
 };
 

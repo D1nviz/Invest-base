@@ -14,7 +14,7 @@ import { featuredItems } from "../Constants";
 
 const AppFeatured = () => {
     const featureRef = useRef();
-    const isOnScreen = useOnScreen(featureRef, "-100px")
+    const isOnScreen = useOnScreen(featureRef)
     useAnimation(isOnScreen, featureRef);
 
     return (
