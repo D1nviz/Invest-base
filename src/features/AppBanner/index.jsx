@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { amimateDesctiption, animateTitle } from "../../helpers";
 import {
   BannerSection,
   BannerContainer,
@@ -10,12 +12,20 @@ import {
 import { Button } from "../../styles";
 
 const AppBanner = () => {
+
+  const descriptionRef = useRef(null);
+  const titleRef = useRef(null);
+    useEffect(() => {
+      amimateDesctiption(descriptionRef);
+      animateTitle(titleRef);
+  },[])
+
   return (
     <BannerSection>
       <BannerContainer>
         <BannerInfo>
-          <BannerTitle> Meet the <span>future of crypto investing.</span></BannerTitle>
-          <BannerDescription>Whether you’re building your first portfolio or you’ve been in crypto for years, Path aims to give you a simpler, smarter way to invest in digital assets.</BannerDescription>
+          <BannerTitle ref={titleRef} > Meet the <span>future of crypto investing.</span></BannerTitle>
+          <BannerDescription ref={descriptionRef}>Whether you’re building your first portfolio or you’ve been in crypto for years, Path aims to give you a simpler, smarter way to invest in digital assets.</BannerDescription>
           <Button>Coming soon</Button>
         </BannerInfo>
         <BannerVideoContainer>

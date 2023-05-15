@@ -45,6 +45,5 @@ export const FeaturedItem = styled.div`
       &:hover {
       filter: saturate(450%);
    }
-   }
-   
+   }  
 `;

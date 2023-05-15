@@ -21,6 +21,12 @@ export const BannerInfo = styled.div`
 `;
 export const BannerDescription = styled.p`
    font-size: 16px;
+   div {
+      display: inline-block;
+      .letter {
+         opacity: 0;
+      }
+   }
 `;
 export const BannerVideoContainer = styled.div`
    width: 500px;

@@ -10,7 +10,6 @@ const useAnimation = (isOnScreen, ref) => {
       gsap.to(ref.current, {
         scrollTrigger: {
           trigger: ref.current,
-          once: true,
           start: "top 90%", 
         },
         y: 0,
@@ -21,7 +20,6 @@ const useAnimation = (isOnScreen, ref) => {
       gsap.to(ref.current, {
         scrollTrigger: {
           trigger: ref.current,
-          once: true
         },
         y: -20,
         opacity: 0,
