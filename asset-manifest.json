@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/Invest-base/static/css/main.9324c03e.css",
-    "main.js": "/Invest-base/static/js/main.a1a375c5.js",
+    "main.css": "/Invest-base/static/css/main.1b3b0d41.css",
+    "main.js": "/Invest-base/static/js/main.dbbe588d.js",
     "static/media/advantage-2.png": "/Invest-base/static/media/advantage-2.01d212a3a0353cda9576.png",
     "static/media/advantage-1.png": "/Invest-base/static/media/advantage-1.fdcee76d280fd40de95a.png",
     "static/media/advantage-3.png": "/Invest-base/static/media/advantage-3.bd5064279956dc865bde.png",
     "static/media/card-1.webp": "/Invest-base/static/media/card-1.c367e68f0259c6528d4a.webp",
     "static/media/card-4.webp": "/Invest-base/static/media/card-4.d8127e52092fea87bef2.webp",
     "static/media/card-3.webp": "/Invest-base/static/media/card-3.d5a4bc69cbf6bd6ca999.webp",
+    "static/media/advantageIcon6.png": "/Invest-base/static/media/advantageIcon6.99f3b9437ad7c3ac2ed8.png",
     "static/media/card-2.webp": "/Invest-base/static/media/card-2.2179dc0fd2dafe01a01d.webp",
+    "static/media/advantageIcon4.webp": "/Invest-base/static/media/advantageIcon4.be675397056b655c72aa.webp",
     "static/media/logo.svg": "/Invest-base/static/media/logo.8cd849e7682a882430b5df9c6d2a5f53.svg",
+    "static/media/advantageIcon5.webp": "/Invest-base/static/media/advantageIcon5.65e79d1400ff27387bb6.webp",
+    "static/media/advantageIcon2.webp": "/Invest-base/static/media/advantageIcon2.e7aca1e19dc1139a27e5.webp",
     "static/media/advantageIcon1.webp": "/Invest-base/static/media/advantageIcon1.7756a17fadaa56ef2284.webp",
+    "static/media/advantageIcon3.webp": "/Invest-base/static/media/advantageIcon3.027cbec2bed23e23f2f6.webp",
     "index.html": "/Invest-base/index.html",
     "static/media/active-option.svg": "/Invest-base/static/media/active-option.68577053c3e73cdd0681371897b5ef59.svg",
     "static/media/un-active-option.svg": "/Invest-base/static/media/un-active-option.14ed06cbeedf18e328cd5fb69d142f60.svg",
-    "main.9324c03e.css.map": "/Invest-base/static/css/main.9324c03e.css.map",
-    "main.a1a375c5.js.map": "/Invest-base/static/js/main.a1a375c5.js.map"
+    "main.1b3b0d41.css.map": "/Invest-base/static/css/main.1b3b0d41.css.map",
+    "main.dbbe588d.js.map": "/Invest-base/static/js/main.dbbe588d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9324c03e.css",
-    "static/js/main.a1a375c5.js"
+    "static/css/main.1b3b0d41.css",
+    "static/js/main.dbbe588d.js"
   ]
 }
