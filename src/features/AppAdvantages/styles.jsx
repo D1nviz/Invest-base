@@ -22,7 +22,6 @@ export const SlideContainer = styled.section`
   border-radius: 90px;
   justify-content: space-around;
   display: flex;
-  margin-top: 40px;
   overflow: hidden;
   z-index: ${({ zIndex }) => zIndex || 0};;
   box-shadow: 0px 0px 40px 1px #9595958d;
