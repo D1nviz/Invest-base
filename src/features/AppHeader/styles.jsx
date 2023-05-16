@@ -10,7 +10,7 @@ export const Header = styled.div`
    justify-content: space-between;
    background-color: rgba(255,255,255, .8);
    z-index: 100;
-   backdrop-filter: blur(5px);
+   backdrop-filter: blur(7px);
 `;
 export const NavPanel = styled.nav`
    width: 200px;

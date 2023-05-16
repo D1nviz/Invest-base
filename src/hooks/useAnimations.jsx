@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const useAnimation = (isOnScreen, ref) => {
+export const useAnimation = (isOnScreen, ref) => {
   useEffect(() => {
     gsap.fromTo(
       ref.current,
@@ -27,4 +27,38 @@ const useAnimation = (isOnScreen, ref) => {
   }, [isOnScreen]);
 }
 
-export default useAnimation;
+export const useAnimateLock = (isOnScreen, top, bottom) => {
+  useEffect(() => {
+    if (isOnScreen) {
+      gsap.fromTo(top.current, {
+        rotate: -35,
+        y: -6,
+        duration: .5,
+        x: -5,
+      },
+      {
+        x: 0,
+        y: 0,
+        rotate: 0,
+        ease: "Power4.easeIn",
+        duration: .5,
+        delay: .2
+      });
+      gsap.fromTo(bottom.current, {
+        rotate: 35,
+        y: 10,
+        duration: .5,
+        x: -5,
+      },
+      {
+        x: 0,
+        y: 0,
+        rotate: 0,
+        ease: "Power2.easeIn ",
+        duration: .5,
+        delay: .2
+        
+      });
+    }
+  }, [isOnScreen]);
+}

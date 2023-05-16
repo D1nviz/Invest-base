@@ -3,6 +3,7 @@
   list-style-type: none;
   font-family: 'Gilroy', sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   
 }
 .slides-container .pin-spacer:last-child .slide {

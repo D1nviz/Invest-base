@@ -1,6 +1,7 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import useOnScreen from "../../hooks/useOnScreen";
-import useAnimation from "../../hooks/useAnimations";
+import { useAnimation, useAnimateLock } from "../../hooks/useAnimations";
+
 import {
   FeaturedDescription,
   FeaturedTitle,
@@ -8,18 +9,30 @@ import {
   FeaturedItemsContainer,
   FeaturedItem,
   FeaturedSection,
-  FeaturedInfoContainer
+  FeaturedInfoContainer,
+  FeaturedLock
 } from "./styles";
 import { featuredItems } from "../Constants";
+import lockTop from "../../resources/lock/top.png";
+import lockBottom from "../../resources/lock/bottom.png";
 
 const AppFeatured = () => {
+  const topLock = useRef(null);
+  const bottomLock = useRef(null);
   const featureRef = useRef();
-  const isOnScreen = useOnScreen(featureRef)
-  useAnimation(isOnScreen, featureRef);
+  const isItemsOnScreen = useOnScreen(featureRef);
+  const isLockOnScreen = useOnScreen(topLock);
+
+  useAnimateLock(isLockOnScreen, topLock, bottomLock);
+  useAnimation(isItemsOnScreen, featureRef);
 
   return (
     <FeaturedSection >
       <FeaturedInfoContainer>
+        <FeaturedLock>
+          <img ref={topLock} className="top" src={lockTop} alt="" />
+          <img ref={bottomLock} className="main" src={lockBottom} alt="" />
+        </FeaturedLock>
         <FeaturedDescription>
           <FeaturedTitle>Path is a registered investment advisor.</FeaturedTitle>
           <FeaturedText>As a registered and regulated crypto robo-investment advisor, our responsibility is to

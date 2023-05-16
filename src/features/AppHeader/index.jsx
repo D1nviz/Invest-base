@@ -5,11 +5,15 @@ import {
   NavItem
 } from "./styles";
 import { Logo } from "../../styles"
-import logo from "../../resources/logo.svg"
+import logo from "../../resources/svg/logo.svg"
+
 const AppHeader = () => {
+  const pageReload = () => {
+    window.location.reload()
+  }
   return (
     <Header>
-      <Logo><img src={logo} alt="logo" /></Logo>
+      <Logo onClick={pageReload}><img src={logo} alt="logo" /></Logo>
       <NavPanel>
         <NavList>
           <NavItem>Blog</NavItem>

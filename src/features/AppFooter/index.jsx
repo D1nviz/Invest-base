@@ -8,16 +8,18 @@ import {
   FooterContainer,
   FooterLinesContainer
 } from "./styles";
-
-import logo from "../../resources/logo.svg";
+import logo from "../../resources/svg/logo.svg";
 
 const AppFooter = () => {
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  }
   return (
     <Footer>
       <FooterLinesContainer>
         <FooterContainer>
           <FooterInfoContainer>
-            <FooterLogo>
+            <FooterLogo onClick={scrollTop}>
               <img src={logo} alt="logo" />
             </FooterLogo>
             <FooterDescription>

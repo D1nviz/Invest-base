@@ -44,18 +44,24 @@ const AppAdvantages = () => {
     id,
     bgImg,
     headColor,
-    fntColor
+    fntColor,
+    button
   }, i) => {
     const renderDesctiption = description.map(({ ico, text }) => (
       <SlideDescription key={uuidv4()}><img src={ico} alt="description ico" /><span>{text}</span></SlideDescription>
     ));
     return (
-      <SlideContainer className="slide" zIndex={i} ref={(ref) => (slidesRef.current[i] = ref)} bgImg={bgImg} fntColor={fntColor} key={uuidv4()}>
+      <SlideContainer
+        key={uuidv4()}
+        className="slide" zIndex={i}
+        ref={(ref) => (slidesRef.current[i] = ref)}
+        bgImg={bgImg} fntColor={fntColor}
+      >
         {setImageOrder(id, image)}
         <SlideInfoContainer>
           <SlideHeadDesc headColor={headColor} >{headDesc}</SlideHeadDesc>
           <SlideTitle>{title}</SlideTitle>
-          <SlideButton>Coming soon</SlideButton>
+          <SlideButton colorStyles={button}>Coming soon</SlideButton>
           <SlideDescriptionContainer>
             {renderDesctiption}
           </SlideDescriptionContainer>

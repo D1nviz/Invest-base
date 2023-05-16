@@ -47,14 +47,47 @@ export const SlideTitle = styled.h3`
   margin-top: 0;
   margin-bottom: 0;
 `;
-export const SlideButton = styled(Button)`
-  box-shadow: none;
+
+export const SlideButton = styled.button`
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
   width: 255px;
   padding: 14px;
   font-size: 18px;
   border-radius: 24px;
   margin: 25px 0;
-`;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all .2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: ${({ colorStyles }) => colorStyles ? colorStyles.color : "#fff" };
+  background-color: ${({ colorStyles }) => colorStyles ? colorStyles.background : "#2f3158" };
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: ${({ colorStyles }) => colorStyles ? colorStyles.background : "#2f3158" };
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  &:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+  }
+`
 export const SlideImgContainer = styled.div`
   order: ${({ position }) => position};
   align-self: flex-end;

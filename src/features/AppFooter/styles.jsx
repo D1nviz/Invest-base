@@ -29,6 +29,7 @@ export const FooterItem = styled.p`
 `;
 export const FooterInfoContainer = styled.div``;
 export const FooterLogo = styled.div`
+   cursor: pointer;
    width: 125px;
 `;
 export const FooterDescription = styled.p`

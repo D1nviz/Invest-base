@@ -10,10 +10,34 @@ export const FeaturedInfoContainer = styled.div`
    background-color:#eff7ef;
    display: flex;
    justify-content: center;
-   border-radius: 50px 50px 50px 50px;
+   align-items: center;
+   border-radius: 50px;
 `;
+export const FeaturedLock = styled.div`
+   width: 42px;
+   height: 42px;
+   margin: 0 10px;
+   & .top {
+      max-height: 25px;
+      max-width: 22px;
+      min-height: 25px;
+      min-width: 22px;
+      margin-top: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+   }
+   & .main {
+      max-height: 22px;
+      max-width: 30px;
+      min-height: 22px;
+      min-width: 30px;
+      margin: -9px auto 0;
+      display: block;
+   }
+`
 export const FeaturedDescription = styled.div`
-   padding: 15px;
+   padding: 10px;
    max-width: 480px;
    `;
 export const FeaturedTitle = styled.p`

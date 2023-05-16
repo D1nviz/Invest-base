@@ -1,9 +1,10 @@
-import { 
-  JoinTitle, 
+import {
+  JoinTitle,
   JoinSection,
   JoinGradient,
   JoinButton
 } from "./styles";
+
 const AppJoinOurProgram = () => {
   return (
     <JoinSection>

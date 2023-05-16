@@ -20,14 +20,13 @@ export const Button = styled.button`
    position: relative;
    overflow: hidden;
    z-index: 1;
-   color: #090909;
+   color: white;
    padding: 0.7em 1.7em;
    font-size: 18px;
    border-radius: 0.5em;
-   background: #e8e8e8;
+   background: #2f3158;
    border: 1px solid #e8e8e8;
-   box-shadow: 6px 6px 12px #c5c5c5,
-               -6px -6px 12px #ffffff;
+   box-shadow: 0px 0px 35px 2px #bdbdbdc5;
    cursor: pointer;
       &:active {
          transform: scale(.98);
@@ -58,24 +57,24 @@ export const Button = styled.button`
          top: 180%;
          width: 160%;
          height: 190%;
-         background-color: #6556e6;
+         background-color: white;
          border-radius: 50%;
          display: block;
          transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
          z-index: -1;
       }
       &:hover {
-         color: #ffffff;
-         border: 1px solid #6556e6;
+         color: #2f3158;
+         border: 1px solid white;
       }
       &:hover::before {
          top: -35%;
-         background-color: #6556e6;
+         background-color: white;
          transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
       }
       &:hover::after {
          top: -45%;
-         background-color: #6556e6;
+         background-color: white;
          transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
       }
 `;

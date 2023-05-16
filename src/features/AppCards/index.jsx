@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import useOnScreen from "../../hooks/useOnScreen"
-import useAnimation from "../../hooks/useAnimations";
+import { useAnimation } from "../../hooks/useAnimations";
 import {
   CardsSection,
   CardContainer,
@@ -12,7 +12,6 @@ import {
 import { cards } from "../Constants";
 
 const AppCards = () => {
-
   const cardsRef = useRef();
   const isOnScreen = useOnScreen(cardsRef);
   useAnimation(isOnScreen, cardsRef);

@@ -1,6 +1,8 @@
 import { TweenMax } from "gsap/gsap-core";
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 export const amimateDesctiption = (descriptionRef) => {
   const splitText = (el) => {
     el.innerHTML = el.textContent.replace(/(\S*)/g, m => {
@@ -44,7 +46,7 @@ export const animateRef = (ref, height) => {
 };
 
 export const animateSlides = () => {
-  gsap.registerPlugin(ScrollTrigger);
+  
   let slides = gsap.utils.toArray(".slide");
   slides.forEach(slide => ScrollTrigger.create({ trigger: slide, start: "top top" }));
 
@@ -68,3 +70,5 @@ export const animateSlides = () => {
     });
   });
 }
+
+

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Button } from "../../styles";
 export const JoinSection = styled.section`
-  width: 95%;
+  width: 1120px;
   margin: 30px auto;
 `;
 export const JoinTitle = styled.h3`
@@ -9,7 +9,6 @@ export const JoinTitle = styled.h3`
   text-align: center;
 `;
 export const JoinGradient = styled.span`
-  font-size: 1em;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(121deg,#3554f2,#11dead);
   -webkit-background-clip: text;
